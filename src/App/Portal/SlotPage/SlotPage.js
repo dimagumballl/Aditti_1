@@ -13,12 +13,12 @@ const productsMap = AboutSlot.reduce((accObj,slot)=>({
 
 class SlotPage extends Component{
     state={
-        Mimage:productsMap[this.props.match.match.params.id].image[0]
+        Mimage:productsMap[this.props.match.match.params.id].image==undefined?SlotPage.defaultProps.image[0]:productsMap[this.props.match.match.params.id].image[0]
     }
     Cheinge=(id)=>{
         this.setState(()=>(
             {
-                Mimage:productsMap[this.props.match.match.params.id].image[[id]]
+                Mimage:productsMap[this.props.match.match.params.id].image[[id]]==undefined?SlotPage.defaultProps.image[0]:productsMap[this.props.match.match.params.id].image[[id]]
             }
         ))
     }
