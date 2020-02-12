@@ -29,6 +29,7 @@ function Portal({
         )}/>
         <Route  path="/Slot/:id"  render={(props)=>(
             <SlotPage
+            AddSlot={AddSlot}
             match={props}
             SlotInCart={SlotInCart}
             />

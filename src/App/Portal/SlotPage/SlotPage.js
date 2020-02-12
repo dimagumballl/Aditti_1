@@ -26,6 +26,7 @@ class SlotPage extends Component{
     {
         
         const {
+            AddSlot,
             match,
             SlotInCart,
             ids=match.match.params.id
@@ -47,6 +48,7 @@ class SlotPage extends Component{
             </div>
             <div className="SlotPageMenuInfo">
                 <div className="Description">
+                        <h1>{productsMap[ids].name}</h1>
                     {productsMap[ids].description==undefined?"Нет описания...":productsMap[ids].description}
                 </div>
                 <div className="SlotPageMenuCartInfo">
@@ -55,9 +57,10 @@ class SlotPage extends Component{
 
                         {SlotInCart[ids]==undefined?"Товар небыл помещен в корзину":
                         <div>
-                            {"Товар был помещен в корзину"}<br></br>{"Количество:"+SlotInCart[ids]}
+                            {"Товар  в корзине количеством:"+SlotInCart[ids]}
                         </div>}
                 </div>
+                <button className="AddToCart" onClick={()=>AddSlot(ids)}>Добавить</button>
             </div>
         </div>
     )}
