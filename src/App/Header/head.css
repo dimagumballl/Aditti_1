@@ -1,0 +1,108 @@
+
+.header{
+    padding: 0px;
+    margin: 0px;
+    max-width: 1200px;
+    min-width: 1200px;
+    margin: auto;
+    width: 100%;
+    background-color: white;
+}
+.header button:hover{
+    background-color: rgba(16, 89, 199, 0.432);
+}
+.TopHead{
+ width: 100%;
+}
+.TopHead li{
+    display: inline;
+    vertical-align: auto
+}
+
+.TopHead li div{
+   display: inline;
+}
+
+.search{
+    border:0.5px dashed rebeccapurple;
+    vertical-align: 27px;
+    height: 100px;
+    padding: 10px;
+
+}
+.search button{
+ background-color: rgba(0, 0, 0, 0);
+ border: none;
+ backface-visibility: hidden;
+ vertical-align: -8px;
+}
+
+.search input{
+    width: 60%;
+    border: none;
+    height: 30px;
+}
+.cart{
+    vertical-align: 27px;
+    float: right;
+    
+}
+.cart button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    backface-visibility: hidden;
+    vertical-align: -10px;
+}
+.cart input{
+    width: 100px;
+    border: none;
+    outline: none;
+}
+.Num{
+    width: 10px;
+    margin-right: -92px;
+    border: none;
+    outline: none;
+}
+.headerMenu{
+    background-color: rgba(41, 85, 143, 0.692);
+}
+.headerMenu li{
+    display: inline;
+}
+.headerMenu button{
+    padding-right:0;
+    margin-right:-4px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 10%;
+    text-align: center;
+    height: 40px;
+}
+.WithSeason:hover {
+    height: 150px;
+}
+.WithSeason:hover ~ .season{
+    display: block;
+}
+.season{
+    max-width: 1200px;
+    width: 100%;
+    height: 250px;
+    display: none;
+    background-color:rgba(16, 89, 199, 0.692);
+    position: absolute;
+    
+}
+.season img{
+    width: 296px;
+    height: 100%;
+    cursor: pointer;
+}
+.season input{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    background-color:rgba(16, 89, 199, 0);
+    border: none;
+}

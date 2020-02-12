@@ -1,0 +1,51 @@
+.CartBarMenu{
+    width: 165px;
+    max-height: 400px;
+    position:absolute;
+    float: left;
+    margin-left: -166px;
+    margin-top: 51px;
+    background-color: aliceblue;
+    overflow: auto;
+    z-index: 2;
+
+}
+.CartBarMenu button{
+    width: 100%;
+    height: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.CartBarMenuNone{
+    visibility: hidden;
+    min-width: 155px;
+    max-height: 300px;
+    position:absolute;
+    float: left;
+    margin-left: -156px;
+    margin-top: 51px;
+    background-color: aliceblue;
+    overflow: auto;
+}
+
+.SlotBar{
+    cursor: pointer;
+    height: 40px;
+    width: 155px;
+    font-size: 13px;
+    display: inline-block;
+    float: right;
+}
+.SlotBar:hover{
+    background-color: rgba(16, 89, 199, 0.6);
+}
+.SlotBar img{
+    width: 40px;
+    height: 40px;
+    text-align: left;
+}
+.barinfo{
+    text-align: right;
+    vertical-align: top;
+    float: right;
+}

@@ -1,0 +1,82 @@
+.SlotMenu{
+ max-width: 1200px;
+ min-width: 1200px;
+ background-color: white;
+ margin: auto;
+ text-align: left;
+ position: relative;
+}
+.Slot{
+    display: inline-block;
+    height: 614px;
+    width: 297px;
+    background-color: rgba(16, 89, 199, 0.432);
+    padding: 0;
+    margin-top: 4px;
+    text-align: center;
+    
+}
+.Slot:hover{
+    background-color: rgba(16, 89, 199, 0.6);
+    cursor: pointer;
+}
+.Slot img{
+    
+    width:  297px;
+    height: 400px;
+    border: none;
+}
+.Slot input{
+    display: block;
+    border: none;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0);
+}
+
+.ItemColor li{
+    display: inline;
+ 
+}
+.ItemColor img{
+    display: inline-block;
+
+    width: 40px;
+    height: 60px;
+}
+.toCart{
+    display: none;
+    height: 40px;
+    width: 297px;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+
+}
+
+.Slot:hover .toCart{
+    display: block;
+    background-color: rgb(224, 224, 224);
+    
+}
+.toCart:hover{
+    background-color: gray;
+}
+.AddMore{
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+.AddMore button{
+    height: 40px;
+    width: 297px;
+    border: none;
+    background-color: rgba(16, 89, 199, 0.6);
+    cursor: pointer;
+}
+.AddMore button:hover{
+    background-color: rgba(16, 89, 199, 1);
+}

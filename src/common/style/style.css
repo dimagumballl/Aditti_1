@@ -1,0 +1,16 @@
+body{
+    background: rgba(43, 35, 5, 0.5);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.row_0_1{
+   width: 10%;
+}
+.row_0_2{
+    width: 20%;
+ }
+.row_0_6{
+     width: 60%;
+}

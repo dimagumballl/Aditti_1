@@ -1,0 +1,9 @@
+.CartMenu{
+    max-width: 1200px;
+    min-width: 1200px;
+    background-color: white;
+    margin: auto;
+    text-align: left;
+    position: relative;
+    min-height: 500px;
+   }
