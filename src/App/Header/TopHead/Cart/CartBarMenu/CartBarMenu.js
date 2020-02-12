@@ -21,15 +21,17 @@ function CartBarMenu({
             <div className={visibility?"CartBarMenu":"CartBarMenuNone"}>
         <Link to="/cart"><button>В корзину</button></Link>       
         {keys(SlotInCart).map((id)=>(
-            <div className="SlotBar" key={id}>
-                <img src={productsMap[id].image==undefined?CartBarMenu.defaultProps.image[0]:productsMap[id].image[0]}/>
-                <div className="barinfo">
-                    {productsMap[id].name}({productsMap[id].price+"$)"}
+            <Link to={'/Slot/'+id}>
+                <div className="SlotBar" key={id}>
+                    <img src={productsMap[id].image==undefined?CartBarMenu.defaultProps.image[0]:productsMap[id].image[0]}/>
+                    <div className="barinfo">
+                        {productsMap[id].name}({productsMap[id].price+"$)"}
+                        <br></br>
+                        Количество:{SlotInCart[id]<=99?SlotInCart[id]:"99+"}
+                    </div>
                     <br></br>
-                    Количество:{SlotInCart[id]<=99?SlotInCart[id]:"99+"}
                 </div>
-                <br></br>
-            </div>
+            </Link>
             
         ))}
         
