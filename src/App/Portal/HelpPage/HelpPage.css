@@ -1,0 +1,20 @@
+h1{
+    text-align: left;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.HelpMenu{
+    max-width: 1200px;
+ min-width: 1200px;
+ background-color: white;
+ margin: auto;
+ text-align: left;
+ position: relative;
+
+}
+.HelpMenuM{
+    width: 800px;
+    margin: auto;
+    padding-bottom: 50px;
+}

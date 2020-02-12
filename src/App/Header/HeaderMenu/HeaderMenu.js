@@ -6,7 +6,7 @@ function HeaderMenu() {
     return (
         <ul className="headerMenu">
             <li  className="WithSeason">
-                <button>ПОМОЩЬ</button>
+                <Link to="/Help"><button>ПОМОЩЬ</button></Link>
             </li>
             <li  className="WithSeason">
                <Link to="/"><button>ВСЯ КОЛЕКЦИЯ</button></Link>

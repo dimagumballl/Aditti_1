@@ -4,6 +4,7 @@ import {Route} from 'react-router-dom'
 import SlotMenu from './SlotMenu/SlotMenu'
 import CartPage from './CartPage/CartPage'
 import SlotPage from './SlotPage/SlotPage'
+import HelpPage from './HelpPage/HelpPage'
 
 
 function Portal({
@@ -18,6 +19,9 @@ function Portal({
             <SlotMenu 
                 AddSlot={AddSlot}
             />
+        )}/>
+        <Route path='/Help' render={()=>(
+            <HelpPage/>
         )}/>
         <Route path="/cart" render={()=>(
             <CartPage

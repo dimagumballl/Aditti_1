@@ -8,6 +8,7 @@ import visa from './visa.svg'
 import mc from './mc.svg'
 import privat from './privat.svg'
 import './ForFooter.css'
+import {Link} from 'react-router-dom'
 
 function Footer() {
     return (
@@ -15,16 +16,16 @@ function Footer() {
         <div className="row_0_2">
             <ul>
                 <li>
-                    <button>О нас</button>
+                   <Link to="/Help"><button>О нас</button></Link> 
                 </li>
                 <li>
-                    <button>Оплата</button>
+                <Link to="/Help"><button>Оплата</button></Link> 
                 </li>
                 <li>
-                    <button>Доставка</button>
+                <Link to="/Help"><button>Доставка</button></Link> 
                 </li>
                 <li>
-                    <button>Возврат</button>
+                <Link to="/Help"><button>Возврат</button></Link> 
                 </li>
             </ul>
         </div>
