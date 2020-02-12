@@ -1,5 +1,6 @@
 import React from 'react'
 import {keys} from 'lodash'
+import {Link} from 'react-router-dom'
 
 import './CartSlots.css'
 import basket from './basket.png'
@@ -21,7 +22,7 @@ function CartSlots({
         keys(SlotInCart).map((ids)=>(
             <div className="CartSlot" key={ids}>
                 <div className="CartSlotImg">
-                    <img src={productsMap[ids].image==undefined?CartSlots.defaultProps.image[0]:productsMap[ids].image[0]}/>
+                <Link to={'/Slot/'+ids}><img src={productsMap[ids].image==undefined?CartSlots.defaultProps.image[0]:productsMap[ids].image[0]}/></Link>
                 </div>
                 <div className="CartSlotInfo">
                     {productsMap[ids].name}
