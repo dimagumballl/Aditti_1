@@ -51,7 +51,7 @@ class SlotPage extends Component{
                     ))}
                 </div>
                 <div className="SlotPageMenuImgMenu" key={ids}>
-                    <img src={productsMap[ids].image==undefined?SlotPage.defaultProps.image[0]:productsMap[ids].image[this.state.ID]}/>
+                    <img src={productsMap[ids].image==undefined?SlotPage.defaultProps.image[0]:productsMap[ids].image[this.state.ID]==undefined?productsMap[ids].image[0]:productsMap[ids].image[this.state.ID]}/>
                 </div>
             </div>
             <div className="SlotPageMenuInfo">
