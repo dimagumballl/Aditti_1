@@ -5,35 +5,43 @@ import AboutSlot from '../SlotMenu/AboutSlot'
 
 import './SlotPage.css'
 
+
 const productsMap = AboutSlot.reduce((accObj,slot)=>({
     ...accObj,
     [slot.id]:slot
 }),{})
 
 
+var Mimage=undefined
+
 class SlotPage extends Component{
-    state={
-        Mimage:productsMap[this.props.match.match.params.id].image==undefined?SlotPage.defaultProps.image[0]:productsMap[this.props.match.match.params.id].image[0]
-    }
+        state={
+            ID:0
+
+        }
     Cheinge=(id)=>{
-        this.setState(()=>(
-            {
-                Mimage:productsMap[this.props.match.match.params.id].image[[id]]==undefined?SlotPage.defaultProps.image[0]:productsMap[this.props.match.match.params.id].image[[id]]
-            }
-        ))
-    }
-    render()
-    {
+        this.setState(()=>({ID:[id]
+            }))  
+            }        
+    
         
-        const {
-            AddSlot,
-            match,
-            SlotInCart,
-            ids=match.match.params.id
-        }=this.props
+       
+               
+            
+    
+    
+     render(){
+       
+    const{
+        AddSlot,
+        match,
+        SlotInCart,
+        ids=match.match.params.id
+    }=this.props
     return(
         
-        <div className="SlotPageMenu">
+        <div className="SlotPageMenu" key={ids}>
+
             <div className="SlotPageMenuImg">
                 <div className="SlotPageMenuImgBar">
                     {productsMap[ids].image==undefined?"Нет изображений":keys(productsMap[ids].image).map((id)=>(
@@ -42,8 +50,8 @@ class SlotPage extends Component{
                         </li>
                     ))}
                 </div>
-                <div className="SlotPageMenuImgMenu">
-                    <img src={productsMap[ids].image==undefined?SlotPage.defaultProps.image[0]:this.state.Mimage}/>
+                <div className="SlotPageMenuImgMenu" key={ids}>
+                    <img src={productsMap[ids].image==undefined?SlotPage.defaultProps.image[0]:productsMap[ids].image[this.state.ID]}/>
                 </div>
             </div>
             <div className="SlotPageMenuInfo">

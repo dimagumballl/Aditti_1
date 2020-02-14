@@ -21,7 +21,7 @@ function CartBarMenu({
             <div className={visibility?"CartBarMenu":"CartBarMenuNone"}>
         <Link to="/cart"><button>В корзину</button></Link>       
         {keys(SlotInCart).map((id)=>(
-            <Link to={'/Slot/'+id}>
+            <Link to={'/Slot/'+id} key={id}>
                 <div className="SlotBar" key={id}>
                     <img src={productsMap[id].image==undefined?CartBarMenu.defaultProps.image[0]:productsMap[id].image[0]}/>
                     <div className="barinfo">

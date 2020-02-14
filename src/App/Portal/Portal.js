@@ -31,7 +31,7 @@ function Portal({
                 DeletSlot={DeletSlot}
             />
         )}/>
-        <Route  path="/Slot/:id"  render={(props)=>(
+        <Route path="/Slot/:id"  render={(props)=>(
             <SlotPage
             AddSlot={AddSlot}
             match={props}

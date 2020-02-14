@@ -13,15 +13,15 @@ h1{
 .SlotPageMenuImg{
 
 width: 600px;
-height: 600px;
-display: inline-block;
+height: 570px;
+
 background-color: rgba(16, 89, 199, 0.432);
-margin-bottom: -5px;
+
 }
 .SlotPageMenuImgBar{
 
     width: 195px;
-    height: 600px;
+    height: 570px;
     float: left;
     text-align: center;
     vertical-align: 300px;
@@ -40,7 +40,6 @@ margin-bottom: -5px;
 }
 .SlotPageMenuImgMenu{
     float: right;
-    margin-top: 50px;
     width: 403px;
     height: 500px;
     
@@ -50,16 +49,18 @@ margin-bottom: -5px;
     height: 100%;
 }
 .SlotPageMenuInfo{
+    margin-top: -570px;
     float: right;
     width: 600px;
-    height: 600px;
+    height: 560px;
 }
 .Description{
+    
     margin: auto;
-    margin-top: 20px;
     height: 350px;
     overflow: auto;
     width: 550px;
+    
 }
 .SlotPageMenuCartInfo{
     font-size: 25px;
@@ -68,13 +69,14 @@ margin-bottom: -5px;
 .AddToCart{
     margin-top: 75px;
     width: 600px;
-    height: 98px;
-    position: absolute;
+    height: 88px;
+
     border: none;
     font-size: 25px;
     background-color: rgb(44, 143, 241);
     color: wheat;
     cursor: pointer;
+    
 }
 .AddToCart:hover{
     background-color: rgba(157, 189, 221, 0.973);
