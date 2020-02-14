@@ -1,11 +1,11 @@
 import React from 'react'
 
-import './menu.css'
+import '../SlotMenu/menu.css'
 
-import Slots from './Slots/Slots'
-import AboutSlot from './AboutSlot'
+import Slots from '../SlotMenu/Slots/Slots'
+import AboutSlot from '../SlotMenu/AboutSlot'
 
-function SlotMenu({
+function Obuv({
     AddSlot
 }) {
     return (
@@ -17,8 +17,8 @@ function SlotMenu({
                         description,
                         price,
                         image,
-                        
-                    })=>(
+                        Obuv
+                    })=>(Obuv!=undefined?
                             <Slots
                                 id={id}
                                 name={name}
@@ -27,7 +27,7 @@ function SlotMenu({
                                 image={image}
                                 AddSlot={AddSlot}
                                 key={id} 
-                            />
+                            />:""
 
                     ))
                 }
@@ -35,4 +35,4 @@ function SlotMenu({
     );
   }
   
-  export default SlotMenu
+  export default Obuv

@@ -9,7 +9,7 @@
 .Slot{
     display: inline-block;
     height: 614px;
-    width: 297px;
+    width: 25%;
     background-color: rgba(16, 89, 199, 0.432);
     padding: 0;
     margin-top: 4px;
@@ -22,7 +22,7 @@
 }
 .Slot img{
     
-    width:  297px;
+    width:  100%;
     height: 400px;
     border: none;
 }
@@ -49,7 +49,7 @@
 .toCart{
     display: none;
     height: 40px;
-    width: 297px;
+    width: 300px;
     border: none;
     background-color: rgba(0,0,0,0);
     position: absolute;

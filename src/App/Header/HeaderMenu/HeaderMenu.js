@@ -12,28 +12,28 @@ function HeaderMenu() {
                <Link to="/"><button>ВСЯ КОЛЕКЦИЯ</button></Link>
             </li>
             <li className="WithSeason">
-                <button>ПЛАТТЯ</button>
+               <Link to="/Platty"><button>ПЛАТТЯ</button></Link>
             </li>
             <li>
-            <button>БЛУЗКИ</button>
+           <Link to="/Bluzka"><button>БЛУЗКИ</button></Link>
             </li>
             <li  className="WithSeason">
-                <button>БРЮКИ, ЮБКИ</button>
+               <Link to="/Bruki"><button>БРЮКИ</button></Link>
             </li>
             <li>
-                <button>ВЯЗАНАЯ</button>
+               <Link to="/Vyzanoe"><button>ВЯЗАНАЯ</button></Link>
             </li>
             <li  className="WithSeason">
-                <button>ДЖИНСЫ</button>
+               <Link to="/Dzins"><button>ДЖИНСЫ</button></Link>
             </li>
             <li  className="WithSeason">
-                <button>ВЕРХ. ОДЕЖДА</button>
+               <Link to="/VerhOdezda"><button>ВЕРХ. ОДЕЖДА</button></Link>
             </li>
             <li  className="WithSeason">
-                <button>ОБУВЬ</button>
+               <Link to="/Obuv"><button>ОБУВЬ</button></Link>
             </li>
             <li>
-                <button>СУМКИ</button>
+               <Link to="/Sumka"><button>СУМКИ</button></Link>
             </li>
         </ul>
     );
