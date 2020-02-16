@@ -60,3 +60,7 @@
 .Del img{
     height: 100%;
 }
+.TotalPrice{
+    text-align: center;
+    font-size: 30px;
+}

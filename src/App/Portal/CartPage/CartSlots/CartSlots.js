@@ -19,7 +19,8 @@ function CartSlots({
     DeletSlot
 }){
     return(
-        keys(SlotInCart).map((ids)=>(
+    <div>
+        {keys(SlotInCart).map((ids)=>(
             <div className="CartSlot" key={ids}>
                 <div className="CartSlotImg">
                 <Link to={'/Slot/'+ids}><img src={productsMap[ids].image==undefined?CartSlots.defaultProps.image[0]:productsMap[ids].image[0]}/></Link>
@@ -34,8 +35,14 @@ function CartSlots({
                 <button className="Del" onClick={()=>DeletSlot(ids)}><img src={basket}/></button>
             </div>
             ))
+    }
+    <div className="TotalPrice">
+        Вцелом:{keys(SlotInCart).reduce((total,ids)=>(total+productsMap[ids].price*SlotInCart[ids]),0)+"$"}
+        <hr></hr>
+    </div>
+    </div>
+)
         
-    )
 }
 CartSlots.defaultProps={
     image:['/Item/Noimg.png']

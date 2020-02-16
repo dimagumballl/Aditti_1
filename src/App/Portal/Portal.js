@@ -15,6 +15,8 @@ import Sumka from './Sumka/Sumka'
 import VerhOdezda from './VerhOdezda/VerhOdezda'
 import Vyzanoe from './Vyzanoe/Vyzanoe'
 
+import Search from './Search/Search'
+
 
 function Portal({
     AddSlot,
@@ -33,6 +35,12 @@ function Portal({
         <Route path="/Bluzka" render={()=>(
             <Bluzka 
                 AddSlot={AddSlot}
+            />
+        )}/>
+        <Route path="/Search/:name" render={(props)=>(
+            <Search
+                AddSlot={AddSlot}
+                match={props}
             />
         )}/>
         <Route path="/Bruki" render={()=>(

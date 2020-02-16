@@ -1,17 +1,22 @@
-import React from 'react'
+import React,{Component} from 'react'
 
-import './menu.css'
+import Slots from '../SlotMenu/Slots/Slots'
+import AboutSlot from '../SlotMenu/AboutSlot'
 
-import Slots from './Slots/Slots'
-import AboutSlot from './AboutSlot'
+import '../SlotMenu/menu.css'
 
-
-function SlotMenu({
-    AddSlot
-}) {
-    return (
+ class Search extends Component{
+     
+     render(){
+        const{
+            AddSlot,
+            match,
+            Nmae=match.match.params.name
+         }=this.props
+         
+     return(
         <div className="SlotMenu">
-            
+ 
             {   
                     AboutSlot.map(({
                         id,
@@ -19,8 +24,8 @@ function SlotMenu({
                         description,
                         price,
                         image,
-                        
-                    })=>(
+  
+                    })=>(name==Nmae?
                             <Slots
                                 id={id}
                                 name={name}
@@ -29,14 +34,11 @@ function SlotMenu({
                                 image={image}
                                 AddSlot={AddSlot}
                                 key={id} 
-                            />
+                            />:""
 
                     ))
                 }
         </div>
-    );
-  }
-  
-  
-  
-  export default SlotMenu
+     )}
+ }
+ export default Search

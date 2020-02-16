@@ -25,7 +25,7 @@ class Cart extends Component{
             <div className="cart">
                 <input value={keys(SlotInCart).reduce((total,ids)=>(total+SlotInCart[ids]),0)<=99?keys(SlotInCart).reduce((total,ids)=>(total+SlotInCart[ids]),0):"99+"} readOnly className="Num"/>
                 <button onClick={()=>MakeVisible()}><img src={cart}/></button>
-                <input value={keys(SlotInCart).reduce((total,ids)=>(total+productsMap[ids].price*SlotInCart[ids]),0)+"$"} readOnly/>
+                <input className="ForTotal" value={keys(SlotInCart).reduce((total,ids)=>(total+productsMap[ids].price*SlotInCart[ids]),0)+"$"} readOnly/>
                 <CartBarMenu
                     SlotInCart={SlotInCart}
                     visibility={visibility}

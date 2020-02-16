@@ -57,6 +57,11 @@
     width: 100px;
     border: none;
     outline: none;
+  
+    
+}
+.ForTotal{
+    font-size: 20px;
 }
 .Num{
     width: 10px;
