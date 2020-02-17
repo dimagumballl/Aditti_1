@@ -2,7 +2,7 @@
   "name": "aditti",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dimagumballl.com/on_react",
+  "homepage": "https://dimagumballl.com/on_react/public/index.html",
   "devDependencies": {
     "gh-pages": "2.2.0",
     "react-scripts": "3.4.0"
