@@ -42,10 +42,12 @@
 }
 .ItemColor img{
     display: inline-block;
-
     width: 40px;
     height: 60px;
+    z-index: 0;
+
 }
+
 .toCart{
     display: none;
     height: 40px;
